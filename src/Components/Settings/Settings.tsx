@@ -1,22 +1,18 @@
-import s from './Showcase.module.scss'
+import s from './Settings.module.scss'
 import sContainer from './../../common/styles/generalContainer.module.scss'
 
 
-
-export const Showcase = () => {
+export const Settings = () => {
     return (
         <div className={s.mainWrapper}>
             <div className={`${sContainer.generalContainer} ${s.container}`}>
-
-            <h3>Showcase</h3>
-            <p>
-                /Портфолио
-                //  Обзор успешных проектов.
-                // Описание результата работы (увеличение продаж, улучшение показателей конверсии, сокращение затрат на рекламу и т.д.).
-                // Кнопка вызова к действию, например, "Связаться с нами".
-
-            </p>
-
+                <h3>Settings</h3>
+                <p>
+                    тут настройки и все такое, кнопка в меню отображается только на время разработки, ссылка тоже будет
+                    не /settings а что то типа /as#^d&%ua&s&%3....
+                </p>
             </div>
+
         </div>
-    )}
+    )
+}
