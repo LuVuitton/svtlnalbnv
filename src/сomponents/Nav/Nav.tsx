@@ -12,7 +12,8 @@ export const Nav = () => {
 //тестим просто работает или не
     const linksToStandardPages = standardPages.map((e,i)=> <NavLink key={i} to={e.pageURL}><button className={s.navBtn}>{e.pageID}</button></NavLink>)
 
-    const links = ['main','about-me','services','showcase','blog','contacts','settings']
+    const links = ['main','settings']
+
     const mappedLinks = links.map((e,i)=>{
         return <NavLink key={i} to={e==='main'?'/':`/${e}`}><button className={s.navBtn}>{e}</button></NavLink>
     })
